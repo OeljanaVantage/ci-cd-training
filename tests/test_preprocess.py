@@ -26,12 +26,7 @@ def test_get_features():
             "ExperienceInCurrentDomain": [2.0, 3.0],
         }
     )
-    y_expected = pd.DataFrame(
-        {
-            "LeaveOrNot": [0.0, 1.0]
-        }
-
-    )
+    y_expected = pd.DataFrame({"LeaveOrNot": [0.0, 1.0]})
     features = [
         "City",
         "PaymentTier",

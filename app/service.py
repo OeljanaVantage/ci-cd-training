@@ -55,7 +55,8 @@ async def predict(request: Request) -> np.ndarray:
     response_dict["prediction"] = result.tolist()
     return JSONResponse(content=response_dict)
 
+
 if __name__ == "__main__":
     config = Config()
     model = load_model(f"{config.PROJECT_ROOT}/{config.MODEL_PATH}/model.pickle")
-    uvicorn.run(app, host="0.0.0.0", port=os.environ.get('PORT', '3000'))
+    uvicorn.run(app, host="0.0.0.0", port=os.environ.get("PORT", "3000"))

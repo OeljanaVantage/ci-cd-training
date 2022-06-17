@@ -4,6 +4,7 @@ import requests
 import streamlit as st
 
 
+#
 def get_inputs():
     """Get inputs from users on streamlit"""
     st.title("Predict employee future")

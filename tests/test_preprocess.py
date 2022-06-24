@@ -1,7 +1,6 @@
 import pandas as pd
 from src.preprocess import get_features, rename_columns
 
-
 def test_get_features():
     df_input = pd.DataFrame(
         {
